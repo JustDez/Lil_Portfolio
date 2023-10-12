@@ -1,0 +1,56 @@
+body {
+    background-color: navajowhite;
+}
+
+h1 {
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color:rgb(5, 233, 210);
+}
+
+/* pseudo element -having issues with links-*/
+h1::before {
+    content: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hotelpalomar-phoenix.com%2Fthings-to-do-in-phoenix%2F&psig=AOvVaw3wWOOBe1kMOTwA7kZ6h8ik&ust=1697078242973000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJj1sqf77IEDFQAAAAAdAAAAABAE)
+}
+
+section::after {
+    content:url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fboardingpasstraveler.com%2F2022%2F12%2F14%2Fhiking-camelback-mountain-in-phoenix-arizona%2F&psig=AOvVaw3hLN1KpgcoWgg94UeNm7a0&ust=1697077591947000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCIjigvH47IEDFQAAAAAdAAAAABAL);
+}
+/* simple */
+.about{
+    text-align: center;
+    font-family: sans-serif;
+    color:purple;
+
+}
+
+/* attribute */
+[class |="goal"] {
+    text-align:center;
+    font-family:sans-serif;
+    color:chocolate;
+}
+
+/* pseudo class */
+h2:hover{
+    color:rgb(5, 233, 210);
+}
+/* combinator */
+section > p {
+    font-family: sans-serif;
+    color: black;
+}
+
+.hike {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.me {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
